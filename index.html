@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+           font-family: Arial, sans-serif;
+           background-image: url('background.jpg'); /* Replace with your background image path */
+           background-size: cover;
+           color: white;
+           text-align: center;
+           padding: 50px;
+       }
+       form {
+           background-color: rgba(0, 0, 0, 0.7);
+           padding: 20px;
+           border-radius: 10px;
+           display: inline-block;
+       }
+       input[type="text"], input[type="email"], input[type="tel"] {
+           width: 100%;
+           padding: 10px;
+           margin: 10px 0;
+           border-radius: 5px;
+           border: none;
+       }
+       input[type="submit"] {
+           padding: 10px 20px;
+           border: none;
+           border-radius: 5px;
+           background-color: #4CAF50;
+           color: white;
+           cursor: pointer;
+       }
+       input[type="submit"]:hover {
+           background-color: #45a049;
+       }
+       p {
+           color: white;
+       }
+   </style>
+</head>
+<body>
+<h2><center>Registration form</center></h2>
+<form action="welcome.html" method="GET">
+   <label for="fname">First Name:</label><br>
+   <input type="text" id="fname" name="fname" required><br><br>
+
+   <label for="lname">Last Name:</label><br>
+   <input type="text" id="lname" name="lname" required><br><br>
+
+   <label for="Gender">Gender:</label><br><br>
+   <label for="Male">Male</label>
+   <input type="radio" id="male" name="male" required>
+   <label for="Female">Female</label>
+   <input type="radio" id="female" name="Female" required><br><br>
+
+   <label for="Course">Course</label>
+   <select name="Course" id="Course">
+   <option value="BCA">BCA</option>
+   <option value="B-TECH">B-TECH</option>
+   <option value="BSC">BSC</option>
+   <option value="BBA">BBA</option>
+   </select><br><br>
+   
+   <label for="phone">Phone:</label><br>
+   <input type="tel" id="phone" name="phone" required><br><br>
+
+   <input type="submit" value="Submit">
+</form>
+
+<p>Already have an account? <a href="signin.html" style="color: #4CAF50;">Sign In</a></p>
+    
+</body>
+</html>
